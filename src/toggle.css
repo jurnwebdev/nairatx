@@ -1,0 +1,130 @@
+.menu-toggle {
+  display: none;
+}
+
+.bar {
+  display: flex;
+  width: 25px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #000;
+  z-index: 5000;
+}
+
+.cart-hide {
+  display: none;
+}
+
+.navbar .menu {
+  display: flex;
+}
+
+.btn-cart {
+  padding: 10px 20px;
+  border: 0px solid red;
+  cursor: pointer;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.984);
+    position: absolute;
+    top: 70px;
+    right: 100px;
+    padding: 50px;
+    width: 300px;
+    opacity: 0;
+    transform: translateY(-400px);
+    transition: transform 1s;
+  }
+
+
+  .hide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.984);
+    position: absolute;
+    top: 100px;
+    right: 190px;
+    padding: 50px;
+    width: 280px;
+    opacity: 0;
+    transform: translateY(-400px);
+    transition: transform 1s;
+  }
+
+  .menu.open {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 1s;
+  }
+
+  /* .navbar .menu.see {
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+  }
+
+  .menu {
+    transform: translate(0px, 190px);
+    transition: translate 4s;
+  }
+
+  .navbar .menu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.984);
+    position: absolute;
+    top: 10px;
+    right: 190px;
+    padding: 50px;
+    width: 300px;
+  }
+
+  .navbar .menu {} */
+
+
+  .menu-toggle {
+    display: flex;
+    gap: 5px;
+    padding: 7px 5px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 23px;
+    right: 70px;
+    cursor: pointer;
+    z-index: 9999;
+    border-style: none;
+    background: none;
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.3);
+  }
+
+  .hidemenu {
+    /* display: none; */
+  }
+
+
+  .menu-toggle .bar {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .navbar.open .menu-toggle .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar.open .menu-toggle .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar.open .menu-toggle .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}

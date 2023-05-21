@@ -1,0 +1,282 @@
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+    .subscribe-form {
+        flex: 1 1 100%;
+    }
+
+    .col-md {
+        flex: 1 1 100%;
+    }
+
+    footer {
+        padding: 50px 50px;
+    }
+
+    .subscribe-cta {
+        padding: 50px 50px;
+        gap: 50px;
+    }
+
+    .subscribe-cta h4 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .client-container img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .client-testimonial-board {
+        width: 300px;
+        box-shadow: 5px 5px 30px -20px rgba(70, 70, 70, 0.5);
+    }
+
+    .client-testimonial-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .client-testimonial-board p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .testimonial {
+        padding: 50px 30px;
+    }
+
+    .testimonial h1 {
+        font-size: 23px;
+    }
+
+    .client-testimonial {
+        gap: 20px;
+    }
+
+    .flex-md-center {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .clients {
+        padding: 50px 20px;
+    }
+
+    .client-container {
+        justify-content: center;
+    }
+
+
+    .event-header h1 {
+        font-size: 23px;
+    }
+
+
+    .navigation {
+        width: 70px;
+    }
+
+    .navigation img {
+        width: 30%;
+    }
+
+    .event-header {
+        padding: 20px 0;
+    }
+
+    .event-container {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .featured-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .date-time {
+        gap: 5px;
+    }
+
+    .date-time span {
+        font-size: 12px;
+        font-weight: bold;
+        font-family: var(--text);
+    }
+
+    .location span {
+        font-size: 12px;
+        font-weight: bold;
+        font-family: var(--text);
+    }
+
+    .event-info h3 {
+        font-size: 16px;
+        font-weight: bold;
+        font-family: var(--text);
+    }
+
+    .event {
+        padding-bottom: 20px;
+    }
+
+    .btn-book {
+        padding: 10px 20px;
+    }
+
+    .sm-flex-column {
+        flex-direction: column;
+    }
+
+    .btn-book {
+        font-size: 12px;
+        margin: 0px
+    }
+
+    .date-time img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .location img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .location span {
+        gap: 10px;
+    }
+
+    .date-time span {
+        gap: 10px;
+    }
+
+    .intro p {
+        font-size: 16px;
+        line-height: 20px;
+        padding: 0px 50px;
+    }
+
+    .intro-img-section img {
+        width: 60%;
+    }
+
+    .ticket-sold {
+        width: 200px;
+        padding: 10px 10px;
+        font-size: 10px;
+        top: -6em;
+        left: 3em;
+    }
+
+    .active-attendees {
+        width: 200px;
+        padding: 10px 10px;
+        font-size: 10px;
+        top: 1em;
+        left: 10em;
+    }
+
+    .popular-events {
+        width: 200px;
+        padding: 10px 20px;
+        font-size: 10px;
+        top: 6em;
+        left: -23em;
+    }
+
+    .hero-container {
+        padding: 250px 30px 80px 30px;
+        height: 50vh;
+    }
+
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .hero-description {
+        font-family: var(--text);
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .btn-discover {
+        padding: 20px 50px;
+        font-size: 14px;
+    }
+
+    header img {
+        width: 120px;
+    }
+
+    header {
+        padding: 20px 20px;
+    }
+
+    .logo {
+        width: 140px;
+    }
+
+    .cart {
+        width: 20px;
+    }
+
+    .navbar {
+        flex-direction: row;
+    }
+
+    .all-events {
+        width: 240px;
+        font-size: 12px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+
+    .l {
+        display: block;
+        margin-bottom: 1.5em;
+        font-size: 0.7em;
+        cursor: pointer;
+    }
+
+    .l {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 0.75em;
+        box-shadow: 0.125em 0.125em 0 0.125em rgba(0, 0, 0, 0.3) inset;
+        color: #fdea7b;
+        display: inline-flex;
+        align-items: center;
+        margin: auto;
+        padding: 0.15em;
+        width: 3em;
+        height: 1.5em;
+        transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+    .basket {
+        display: none;
+        background-color: red;
+    }
+
+    .label {
+        font-size: 16px;
+    }
+
+    .input-container input[type="text"]:focus~.topline {
+        width: 6rem;
+        background-color: #04ac5c;
+        transition: all 0.5s;
+    }
+
+    .copyright p {
+        text-align: center;
+    }
+}
